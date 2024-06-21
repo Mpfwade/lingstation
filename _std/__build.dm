@@ -137,6 +137,7 @@ o+`        `-` ``..-:yooos-..----------..`
 //#define MAP_OVERRIDE_CLARION      // NSS Clarion (Used to be Destiny's Alt), by Dionsu and a69andahalf.
 //#define MAP_OVERRIDE_OSHAN        // Oshan Laboratory, Abzu, by committee
 //#define MAP_OVERRIDE_NADIR        // Nadir Extraction Site by Kubius
+#define MAP_OVERRIDE_LING
 
 //-------Discontinued or gimmick maps:
 //#define MAP_OVERRIDE_MANTA        // NSS Manta by Azungar

@@ -36,6 +36,8 @@
 
 #elif defined(MAP_OVERRIDE_DONUT3)
 
+#elif defined(MAP_OVERRIDE_LING)
+
 // #elif defined(MAP_OVERRIDE_KONDARU)
 
 #elif defined(MAP_OVERRIDE_CLARION)
