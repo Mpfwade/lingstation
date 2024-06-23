@@ -37,7 +37,7 @@ var/datum/event_controller/random_events
 
 	var/time_lock = 1
 	var/list/special_events = list()
-	var/minimum_population = 15 // Minimum amount of players connected for event to occur
+	var/minimum_population = 4 // Minimum amount of players connected for event to occur
 
 	var/start_events_enabled = FALSE
 	var/list/start_events = list()

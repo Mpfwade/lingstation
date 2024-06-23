@@ -50905,15 +50905,15 @@
 	},
 /area/station/science/lobby)
 "cVe" = (
-/obj/machinery/networked/storage/tape_drive{
-	bank_id = "Artlab";
-	locked = 0;
-	setup_drive_type = /obj/item/disk/data/tape/artifact_research
-	},
 /obj/item/device/radio/intercom/science,
 /obj/machinery/power/data_terminal,
 /obj/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/networked/storage/tape_drive{
+	bank_id = "Artlab";
+	locked = 0;
+	setup_drive_type = /obj/item/disk/data/tape/artifact_research
 	},
 /turf/simulated/floor/purplewhite{
 	dir = 9
@@ -51604,13 +51604,13 @@
 	},
 /area/station/science/artifact)
 "cXB" = (
-/obj/machinery/computer3/terminal/zeta{
-	dir = 4;
-	setup_os_string = "ZETA_MAINFRAME"
-	},
 /obj/machinery/power/data_terminal,
 /obj/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/computer3/terminal/zeta{
+	dir = 4;
+	setup_os_string = "ZETA_MAINFRAME"
 	},
 /turf/simulated/floor/purplewhite/corner{
 	dir = 1
@@ -57591,6 +57591,10 @@
 	},
 /turf/simulated/floor/caution/east,
 /area/station/engine/elect)
+"eMc" = (
+/obj/machinery/power/lgenerator,
+/turf/simulated/wall/auto/reinforced/supernorn,
+/area/station/routing/depot)
 "eMn" = (
 /obj/machinery/door/airlock/pyro/classic{
 	dir = 4;
@@ -72888,6 +72892,10 @@
 /obj/mapping_helper/access/maint,
 /turf/simulated/floor/grime,
 /area/station/storage/warehouse)
+"uyL" = (
+/obj/machinery/power/lgenerator,
+/turf/simulated/wall/auto/supernorn,
+/area/station/routing/depot)
 "uzG" = (
 /obj/cable{
 	icon_state = "1-2"
@@ -73802,11 +73810,11 @@
 	},
 /area/station/solar/small_backup1)
 "vCI" = (
-/obj/machinery/power/furnace,
 /obj/cable/orange{
 	icon_state = "0-6"
 	},
 /obj/machinery/firealarm/north,
+/obj/machinery/power/furnace,
 /turf/simulated/floor/plating,
 /area/research_outpost)
 "vCL" = (
@@ -125731,8 +125739,8 @@ bsk
 phh
 bvH
 bxN
-blI
-blK
+eMc
+uyL
 bBd
 blI
 bGM

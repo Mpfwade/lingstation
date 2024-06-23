@@ -7684,7 +7684,6 @@
 /turf/simulated/floor/orangeblack,
 /area/station/storage/eva)
 "aDB" = (
-/obj/machinery/networked/test_apparatus/electrobox,
 /obj/decal/tile_edge/stripe/big{
 	dir = 8
 	},
@@ -7693,6 +7692,7 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/networked/test_apparatus/electrobox,
 /turf/simulated/floor/circuit/purple,
 /area/station/science/artifact)
 "aDC" = (
@@ -8359,12 +8359,12 @@
 /turf/simulated/wall/auto/supernorn,
 /area/station/engine/elect)
 "aFZ" = (
-/obj/machinery/networked/teleconsole{
-	dir = 1
-	},
 /obj/machinery/power/data_terminal,
 /obj/cable{
 	icon_state = "0-4"
+	},
+/obj/machinery/networked/teleconsole{
+	dir = 1
 	},
 /turf/simulated/floor/purplewhite{
 	dir = 9
@@ -9217,7 +9217,6 @@
 /turf/simulated/floor/caution/westeast,
 /area/station/science/lab)
 "aJU" = (
-/obj/machinery/networked/test_apparatus/xraymachine,
 /obj/decal/tile_edge/stripe/big{
 	dir = 9
 	},
@@ -9226,6 +9225,7 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/networked/test_apparatus/xraymachine,
 /turf/simulated/floor/circuit/purple,
 /area/station/science/artifact)
 "aJV" = (
@@ -10794,13 +10794,13 @@
 /obj/cable{
 	icon_state = "0-2"
 	},
-/obj/artifact_spawner,
 /obj/machinery/light{
 	dir = 4;
 	layer = 9.1;
 	light_type = /obj/item/light/tube/light_purpleish;
 	pixel_x = 10
 	},
+/obj/artifact_spawner,
 /turf/simulated/floor/circuit/purple,
 /area/station/science/artifact)
 "aPs" = (
@@ -10863,13 +10863,13 @@
 	},
 /obj/machinery/power/data_terminal,
 /obj/cable,
+/obj/cable{
+	icon_state = "1-8"
+	},
 /obj/table/auto,
 /obj/machinery/networked/storage/scanner{
 	bank_id = "research";
 	pixel_y = 5
-	},
-/obj/cable{
-	icon_state = "1-8"
 	},
 /turf/simulated/floor/purplewhite,
 /area/station/science/teleporter)
@@ -16370,10 +16370,10 @@
 	icon_state = "1-8"
 	},
 /obj/cable,
-/obj/artifact_spawner,
 /obj/disposalpipe/segment/ejection{
 	dir = 8
 	},
+/obj/artifact_spawner,
 /turf/simulated/floor/circuit/purple,
 /area/station/science/artifact)
 "jJZ" = (
@@ -18717,16 +18717,16 @@
 	dir = 4;
 	pixel_x = -15
 	},
+/obj/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/data_terminal,
 /obj/machinery/networked/storage/tape_drive{
 	bank_id = "Artlab";
 	locked = 0;
 	name = "Databank - Artlab";
 	setup_drive_type = /obj/item/disk/data/tape/artifact_research
 	},
-/obj/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/power/data_terminal,
 /turf/simulated/floor/purplewhite{
 	dir = 8
 	},
@@ -18931,9 +18931,6 @@
 /turf/simulated/floor/black,
 /area/station/storage/tools)
 "qXW" = (
-/obj/machinery/networked/test_apparatus/pitching_machine{
-	dir = 4
-	},
 /obj/decal/tile_edge/stripe/big{
 	dir = 9
 	},
@@ -18943,13 +18940,13 @@
 	},
 /obj/cable,
 /obj/machinery/light_switch/west,
+/obj/machinery/networked/test_apparatus/pitching_machine{
+	dir = 4
+	},
 /turf/simulated/floor/circuit/purple,
 /area/station/science/artifact)
 "rda" = (
 /obj/machinery/power/data_terminal,
-/obj/machinery/computer/solar_control/north{
-	dir = 4
-	},
 /obj/cable/yellow{
 	icon_state = "0-4"
 	},
@@ -18963,7 +18960,11 @@
 	pixel_x = -10;
 	tag = ""
 	},
+/obj/machinery/computer/solar_control/north{
+	dir = 4
+	},
 /turf/simulated/floor/plating/random,
+/area/space,
 /area/station/engine/substation/west)
 "reP" = (
 /obj/machinery/teleport/portal_ring,
@@ -20361,10 +20362,10 @@
 /area/station/quartermaster/office)
 "uWm" = (
 /obj/machinery/power/data_terminal,
-/obj/machinery/networked/telepad,
 /obj/cable{
 	icon_state = "0-2"
 	},
+/obj/machinery/networked/telepad,
 /turf/simulated/floor/engine,
 /area/station/science/teleporter)
 "uYa" = (
