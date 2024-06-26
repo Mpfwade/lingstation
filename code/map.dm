@@ -33,6 +33,7 @@ var/global/list/mapNames = list(
 	"Clarion" =				list("id" = "CLARION",		"settings" = "destiny/clarion", "playerPickable" = TRUE,	"MaxPlayersAllowed" = 60),
 	"Oshan Laboratory"= 	list("id" = "OSHAN",		"settings" = "oshan",			"playerPickable" = TRUE,	"MinPlayersAllowed" = 14),
 	"Nadir" =				list("id" = "NADIR",		"settings" = "nadir",			"playerPickable" = TRUE,	"MaxPlayersAllowed" = 70),
+	"LING" =			    list("id" = "LING",	        "settings" = "ling",		    "playerPickable" = TRUE, 	"MinPlayersAllowed" = 15),
 
 	"Manta" =				list("id" = "MANTA",		"settings" = "manta",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 80),
 	"Destiny" =				list("id" = "DESTINY",		"settings" = "destiny",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 80),
@@ -48,7 +49,7 @@ var/global/list/mapNames = list(
 	//"Gehenna" =			list("id" = "GEHENNA",		"settings" = "gehenna",			"playerPickable" = FALSE),
 	"blank" =				list("id" = "BLANK",		"settings" = "", 				"playerPickable" = FALSE),
 	"blank_underwater" =	list("id" = "BLANK_UNDERWATER", "settings" = "", 			"playerPickable" = FALSE),
-	"DevTest" =				list("id" = "DEVTEST",		"settings" = "devtest",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 69)
+	"DevTest" =				list("id" = "DEVTEST",		"settings" = "devtest",			"playerPickable" = FALSE,	"MaxPlayersAllowed" = 69),
 )
 
 /obj/landmark/map
@@ -983,6 +984,7 @@ var/global/list/mapNames = list(
 	name = "CRASH"
 	display_name = "Free Fall"
 
+
 /datum/map_settings/mushroom
 	name = "MUSHROOM"
 	goonhub_map = "/maps/mushroom"
@@ -1208,6 +1210,48 @@ var/global/list/mapNames = list(
 	valid_nuke_targets = list("the developer zone" = list(/area/station/devzone),
 		"the test chamber or space" = list(/area/space))
 
+/datum/map_settings/ling
+	name = "LING"
+	default_gamemode = "changeling"
+	walls = /turf/simulated/wall/auto/supernorn
+	rwalls = /turf/simulated/wall/auto/reinforced/supernorn
+
+	job_limits_override = list(
+	/datum/job/security/security_officer = 0,
+	/datum/job/security/detective = 0,
+	/datum/job/engineering/miner = 0,
+	/datum/job/civilian/mail_courier = 0,
+	/datum/job/command/head_of_personnel = 0,
+	/datum/job/command/head_of_security = 0,
+	/datum/job/command/chief_engineer = 0,
+	/datum/job/command/research_director = 0,
+	/datum/job/command/medical_director = 0,
+	/datum/job/pathologist = 0,
+	/datum/job/special/atmospheric_technician = 0,
+	/datum/job/civilian/AI = 0,
+	/datum/job/civilian/cyborg = 0,
+	)
+
+	windows = /obj/window/auto
+	windows_thin = /obj/window/pyro
+	rwindows = /obj/window/auto/reinforced
+	rwindows_thin = /obj/window/reinforced/pyro
+	windows_crystal = /obj/window/auto/crystal
+	windows_rcrystal = /obj/window/auto/crystal/reinforced
+	window_layer_full = COG2_WINDOW_LAYER
+	window_layer_north = GRILLE_LAYER+0.1
+	window_layer_south = FLY_LAYER+1
+	auto_windows = TRUE
+
+	ext_airlocks = /obj/machinery/door/airlock/pyro/external
+	airlock_style = "pyro"
+
+	escape_dir = SOUTH
+
+	merchant_left_centcom = /area/shuttle/merchant_shuttle/left_centcom/cogmap
+	merchant_left_station = /area/shuttle/merchant_shuttle/left_station/cogmap
+	merchant_right_centcom = /area/shuttle/merchant_shuttle/right_centcom/cogmap
+	merchant_right_station = /area/shuttle/merchant_shuttle/right_station/cogmap
 
 /area/shuttle/merchant_shuttle/left_centcom
 	icon_state = "shuttle_merch_l"
