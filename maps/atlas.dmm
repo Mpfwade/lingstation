@@ -16882,9 +16882,9 @@
 	},
 /obj/machinery/guardbot_dock,
 /obj/cable,
-/obj/machinery/bot/guardbot/ranger,
 /obj/machinery/power/data_terminal,
 /obj/blind_switch/area/south,
+/obj/machinery/bot/guardbot/ranger,
 /turf/simulated/floor/black,
 /area/station/medical/robotics)
 "laS" = (
