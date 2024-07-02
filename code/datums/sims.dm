@@ -209,7 +209,6 @@
 			desc = "Ravenous hunger can only be satiated by feeding on the living..."
 			depletion_rate = 0.039
 
-
 	social
 		name = "social"
 		icon_state = "social"
