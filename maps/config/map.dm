@@ -55,6 +55,8 @@
 #elif defined(MAP_OVERRIDE_NADIR)
 #include "nadir.dm"
 
+#elif defined(MAP_OVERRIDE_LING)
+#include "ling.dm"
 // non rotation maps
 #elif defined(MAP_OVERRIDE_MANTA)
 #include "manta.dm"
