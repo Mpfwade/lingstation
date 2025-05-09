@@ -38,6 +38,7 @@
 #endif
 
 // BEGIN_INCLUDE
+#include "_std\__build.dm"
 #include "code\area.dm"
 #include "code\atom.dm"
 #include "code\client.dm"
@@ -2588,7 +2589,8 @@
 #include "code\z_dmm_suite\reader.dm"
 #include "code\z_dmm_suite\writer.dm"
 #include "interface\skin.dmf"
-#include "maps\config\map.dm"
+#include "maps\ling.dmm"
+#include "maps\config\ling.dm"
 // END_INCLUDE
 
 #ifdef SECRETS_ENABLED
